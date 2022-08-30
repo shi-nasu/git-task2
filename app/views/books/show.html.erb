@@ -1,3 +1,16 @@
+<!-- flashメッセージ表示の記述 -->
+<div class="text-notice">
+<%= flash[:notice] %>
+</div>
+
+<div class="text-success">
+<%= flash[:success] %>
+</div>
+
+<div class="text-danger">
+<%= flash[:danger] %>
+</div>
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>

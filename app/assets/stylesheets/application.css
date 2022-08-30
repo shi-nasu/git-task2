@@ -13,7 +13,15 @@
  *= require_tree .
  *= require_self
  */
+ 
+.text-success {
+  color: green;
+}
 
-.new-create {
+.text-danger {
+  color: green;
+}
+  
+.text-notice {
   color: green;
 }

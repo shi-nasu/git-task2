@@ -1,3 +1,26 @@
+<!-- flashメッセージ表示の記述 -->
+<div class="text-notice">
+<%= flash[:notice] %>
+</div>
+
+<div class="text-success">
+<%= flash[:success] %>
+</div>
+
+<div class="text-danger">
+<%= flash[:danger] %>
+</div>
+
+<!-- createが失敗した時のエラーメッセージ -->
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>errors prohibited this book from being saved:
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <h1>Books</h1>
 <table>
   <thead>
